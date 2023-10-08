@@ -3,7 +3,8 @@ import Image from 'next/image'
 import Sobre from './sobre'
 import Card from '@/components/card'
 import Abilities from '@/components/abilities'
-import { language } from '@/data/tecnologys'
+import { css, framework, git, internet, language, tech } from '@/data/tecnologys'
+import Footer from '@/components/footer'
 
 export default function Home() {
   return (
@@ -26,25 +27,39 @@ export default function Home() {
           priority
         />
       </div>
-      <div className="mb-4 grid text-center gap-5 lg:max-w-5xl lg:w-full lg:mb-5 lg:grid-cols-3 lg:text-left ">
+      <div className="mb-4 grid text-center gap-5 md:grid-cols-2 lg:max-w-5xl lg:w-full lg:mb-5 lg:grid-cols-3 lg:text-left ">
         <Card icon="/design-responsivo.png" description='+2 Anos atuando em projetos front.' />
         <Card icon="/design-responsivo.png" description='Linguagens principais: Javascript & Kotlin' />
-        <div className=' text-center items-center max-lg:row-start-1  '>
-        <h1 className='text-2xl font-bold lg:mt-[50%] max-w-[30ch]'>Sobre mim</h1>
+        <div className=' text-center items-center max-lg:row-start-1 md:max-lg:col-start-1 md:max-lg:col-end-3 md:max-lg:grid md:max-lg:mx-auto'>
+          <h1 className='text-2xl font-bold lg:mt-[50%] max-w-[30ch]'>Sobre mim</h1>
           <p className={`max-w-[30ch] text-lg opacity-50 `}>
-          Focada, dedicada e fazendo telas com amor
+            Focada, dedicada e fazendo telas com amor
           </p>
         </div>
       </div>
 
-      <div className="mb-4 grid text-center gap-5 lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-3 lg:text-left ">
+      <div className="mb-4 grid text-center gap-5 md:grid-cols-2 lg:max-w-5xl lg:w-full lg:mb-5 lg:grid-cols-3 lg:text-left ">
         <Card icon="/design-responsivo.png" description='Formação em MBA de Desenvolvimento Mobile' />
         <Card icon="/design-responsivo.png" description='Design de aplicativos com responsividade' />
         <Card icon="/design-responsivo.png" description='Desenvolvimento para WEB, Nativo android e Mobile (React Native)' />
       </div>
 
-      <div >
-       <Abilities data={language}/>
+      <div className='flex flex-row max-lg:flex-col'>
+        <div className='text-center mx-auto'>
+          <h1 className='text-2xl font-bold mt-14 max-w-[30ch]'>Habilidades & Tecnologias</h1>
+          <p className={`max-w-[30ch] text-lg opacity-50 `}>
+            Algumas das tecnologias que já utilizei nos projetos:
+          </p>
+        </div>
+        {/* <div className='mt-8 grid grid-flow-row-dense grid-cols-2 grid-rows-3'> */}
+        <div className='mt-8 mx-auto flex flex-wrap justify-center max-lg:justify-start  lg:max-w-4xl'>
+          <Abilities data={language} />
+          <Abilities data={framework} />
+          <Abilities data={git} />
+          <Abilities data={internet} />
+          <Abilities data={tech} />
+          <Abilities data={css} />
+        </div>
       </div>
       {/* <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
@@ -97,8 +112,8 @@ export default function Home() {
           </p>
         </a> */}
 
-      <Sobre />
-
+      {/* <Sobre /> */}
+        <Footer/>
     </main>
   )
 }

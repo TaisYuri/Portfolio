@@ -9,7 +9,7 @@ export interface CardProps {
 function Card({description,icon}: CardProps) {
   return (
     <div
-      className="rounded-lg border border-transparent mx-auto px-5 py-4 bg-white transition hover:scale-110 max-md:min-w-[20rem] max-lg:min-w-[24rem] lg:max-w-md "
+      className="rounded-lg border border-transparent mx-auto px-5 py-4 bg-white transition hover:scale-110 md:max-lg:min-w-[18rem] max-md:min-w-[20rem] max-lg:min-w-[24rem] lg:max-w-md "
     >
       <Image
         className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark m-auto"
