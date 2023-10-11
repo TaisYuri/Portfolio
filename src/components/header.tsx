@@ -3,11 +3,11 @@ import Image from 'next/image'
 function Header() {
     return (
         <nav id="header" className="fixed w-full z-30 top-0">
-            <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-                <div className="pl-4 flex items-center">
+            <div className="w-full container flex flex-wrap items-center justify-between mt-0 py-2">
+                <div className="pl-5 flex items-center">
                     <a className="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
                         <Image
-                            className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark"
+                            className="max-sm:w-20 max-sm:h-9 max-lg:w-32 max-lg:h-10"
                             src="/logo.svg"
                             alt="logo"
                             width={180}
@@ -16,7 +16,7 @@ function Header() {
                         />
                     </a>
                 </div>
-                <div className="block lg:hidden pr-4">
+                <div className="block lg:hidden pr-5">
                     <button id="nav-toggle" className="flex items-center p-1 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
                         <svg className="fill-current h-7 w-7" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <title>Menu</title>

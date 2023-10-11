@@ -16,7 +16,7 @@ function Abilities({ data }: AbilitiesProps) {
             className="flex flex-row rounded-xl px-5 py-4 mb-4 mr-4 bg-white drop-shadow-md transition max-sm:min-w-[10rem] max-md:min-w-[20rem] max-lg:min-w-[13rem] "
         >
             {data?.map(item =>
-                <div className='mx-3 max-sm:mx-2'>
+                <div key={item.nameTecnology} className='mx-3 max-sm:mx-2'>
                     <Image
                         className="relative dark m-auto max-sm:w-9 max-sm:h-9 max-lg:w-10 max-lg:h-10"
                         src={item.icon}
