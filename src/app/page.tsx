@@ -5,6 +5,9 @@ import Card from '@/components/card'
 import Abilities from '@/components/abilities'
 import { css, framework, git, internet, language, tech } from '@/data/tecnologys'
 import Footer from '@/components/footer'
+import ProjectSlider from '@/components/projectsSlider'
+import ProjectSliderEffect from '@/components/projectsSliderEffect'
+import { projects } from '@/data/projects';
 
 export default function Home() {
   return (
@@ -15,7 +18,7 @@ export default function Home() {
         {/* Get started by editing&nbsp;
           <code className="font-mono font-bold">src/app/page.tsx</code> */}
         {/* </div> */}
-        <Sobre/>
+        <Sobre />
       </div>
 
 
@@ -105,7 +108,8 @@ export default function Home() {
 
       {/* <Sobre /> */}
 
-        <Footer/>
+      <ProjectSliderEffect projects={projects} />
+      <Footer />
     </main>
   )
 }
