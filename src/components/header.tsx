@@ -2,8 +2,8 @@ import Image from 'next/image'
 
 function Header() {
     return (
-        <nav id="header" className="fixed w-full z-30 top-0">
-            <div className="w-full container flex flex-wrap items-center justify-between mt-0 py-2">
+        <nav id="header" className="fixed w-full z-30 top-0 max-sm:ml-[-2rem]">
+            <div className="w-full container flex flex-wrap items-center justify-between mt-0 py-2 mx-auto">
                 <div className="pl-5 flex items-center">
                     <a className="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
                         <Image

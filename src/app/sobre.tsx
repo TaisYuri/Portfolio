@@ -3,8 +3,8 @@ import Image from "next/image";
 function Sobre() {
   return (
     <div className="container mx-auto" id="sobre">
-      <div className="md:grid md:grid-cols-3 md:gap-x-16 lg:gap-x-8 items-center">
-        <section className="flex flex-col col-span-2 mt-16 mb-8 md:mb-10 ">
+      <div className="md:grid md:grid-cols-2 md:gap-x-4 lg:gap-x-8 items-center">
+        <section className="flex flex-col  mt-16 mb-8 md:mb-10 ">
           <h1 className="text-5xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
             Olá! Me chamo
           </h1>
@@ -21,8 +21,8 @@ function Sobre() {
         </section>
         <div className="">
           <Image
-            className="my-2 mx-4 max-sm:w-46 max-lg:w-80 max-md:mx-auto"
-            src="/design-responsivo.png"
+            className="max-w-max my-2 mx-4 max-sm:w-46 max-lg:w-80 max-md:mx-auto"
+            src="/photo.png"
             alt="img"
             width={640}
             height={237}
