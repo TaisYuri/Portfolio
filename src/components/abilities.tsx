@@ -13,7 +13,7 @@ export interface AbilitiesProps {
 function Abilities({ data }: AbilitiesProps) {
     return (
         <div
-            className="flex flex-row rounded-xl px-5 py-4 mb-4 mr-4 bg-white drop-shadow-md transition max-sm:min-w-[10rem] max-md:min-w-[20rem] max-lg:min-w-[13rem] "
+            className="flex flex-row items-end rounded-xl px-5 py-4 mb-4 mr-4 bg-white drop-shadow-md transition max-sm:min-w-[10rem] max-md:min-w-[20rem] max-lg:min-w-[13rem] "
         >
             {data?.map(item =>
                 <div key={item.nameTecnology} className='mx-3 max-sm:mx-2'>
@@ -25,7 +25,7 @@ function Abilities({ data }: AbilitiesProps) {
                         height={37}
                         priority
                     />
-                    <p className={`mt-2 text-sm text-center max-w-[3rem] opacity-70 text-neutral-600 max-sm:text-[0.675rem] max-lg:text-xs`}>
+                    <p className={`mt-2 text-sm text-center max-w-[3rem] whitespace-nowrap opacity-70 text-neutral-600 max-sm:text-[0.675rem] max-lg:text-xs`}>
                         {item.nameTecnology}
                     </p>
                 </div>
