@@ -108,7 +108,7 @@ export default function Home() {
 
       {/* <Sobre /> */}
 
-      <ProjectSliderEffect projects={projects} />
+      <ProjectSlider projects={projects} />
       <Footer />
     </main>
   )

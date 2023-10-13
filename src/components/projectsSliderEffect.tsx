@@ -15,7 +15,7 @@ export interface ProjectSchema{
 function ProjectSliderEffect({ projects }:ProjectSchema) {
 
   return (
-    <div className='max-w-2xl bg-red-300'>
+    <div className='max-w-2xl mt-8 rounded-xl drop-shadow-md border border-transparent  px-5 py-4 bg-white'>
 
       <Swiper
         effect={'coverflow'}
@@ -37,8 +37,8 @@ function ProjectSliderEffect({ projects }:ProjectSchema) {
         className="mySwiper"
       >
         {projects.map(project =>
-          <SwiperSlide>
-            <div className='flex'>
+          <SwiperSlide key={project.title}>
+            <div  className='flex'>
               <Image
                 className="relative ml-3"
                 src={project.image}
@@ -47,12 +47,12 @@ function ProjectSliderEffect({ projects }:ProjectSchema) {
                 height={37}
                 priority
               />
-              <div className='max-w-xs'>
-                <h2 className="text-lg text-center">{project.title}</h2>
+              <div className='max-w-md'>
+                <h2 className="text-xl leading-10 font-bold text-center">{project.title}</h2>
                 <p className="mt-2">{project.description}</p>
-                <div className='mt-4 flex'>
+                <div className='mt-8 flex'>
                   {project.tags?.map(item =>
-                    <div className='ml-3 bg-slate-500 rounded-xl py-2 px-3 text-sm'>{item}</div>
+                    <div key={item} className='ml-3 bg-slate-500 rounded-xl py-2 px-3 text-sm'>{item}</div>
                   )}
                 </div>
               </div>
