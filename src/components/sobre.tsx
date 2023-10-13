@@ -2,13 +2,13 @@ import Image from "next/image";
 
 function Sobre() {
   return (
-    <div className="container mx-auto" id="sobre">
+    <div className="container mx-auto animate-fade-right animate-duration-[3000ms]" id="sobre">
       <div className="md:grid md:grid-cols-2 md:gap-x-4 lg:gap-x-8 items-center">
         <section className="flex flex-col  mt-16 mb-8 md:mb-10 ">
           <h1 className="text-5xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
             Olá! Me chamo
           </h1>
-          <h1 className="text-5xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8 text-slate-300">
+          <h1 className="text-5xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8 text-[#FA7436]">
             Tais Yuri
           </h1>
           <h1 className="text-5xl lg:text-7xl font-bold tracking-tighter leading-tight md:pr-8">
@@ -43,9 +43,9 @@ function Sobre() {
             </div>
             
         </div>
-        <div className="px-3 py-2 border-2 border-spacing-3 rounded-md border-stone-500 mb-6 max-w-max ">
+        <div className="px-3 py-2 border-2 border-spacing-3 rounded-md border-[#FA7436] mb-6 max-w-max ">
             <h3 className="text-lg lg:text-base leading-tight text-center">
-              <a className="hover:underline" href="/">
+              <a className="text-[#FA7436] hover:underline" href="/">
                 Meus Projetos
               </a>
             </h3>

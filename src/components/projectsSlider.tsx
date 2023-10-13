@@ -3,11 +3,13 @@
 import Image from 'next/image'
 import { useEffect } from 'react';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-coverflow';
+import 'swiper/css/navigation';
+
 import { ProjectProps } from '@/data/projects';
 
 export interface ProjectSchema{
@@ -17,19 +19,21 @@ export interface ProjectSchema{
 function ProjectSlider({ projects }:ProjectSchema) {
 
   return (
-    <div className='max-w-6xl mt-8 mx-auto rounded-xl drop-shadow-md border border-transparent px-3 py-4 bg-white max-sm:max-w-[22rem] max-lg:max-w-[45rem]'>
+    <div id="projetos" className='max-w-6xl mt-8 mx-auto  max-sm:max-w-[22rem] max-lg:max-w-[45rem]'>
 
       <Swiper
         spaceBetween={120}
         slidesPerView={1}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
-        pagination={true} modules={[Pagination]}
+        pagination={true} 
+        navigation={true} 
+        modules={[Pagination, Navigation]}
 
       >
         {projects.map(project =>
           <SwiperSlide key={project.title}>
-            <div  className='flex max-sm:flex-col max-sm:items-center lg:justify-center'>
+            <div  className='flex rounded-xl drop-shadow-md border border-transparent px-3 py-4 bg-white m-2 max-sm:flex-col max-sm:items-center lg:justify-center'>
               <Image
                 className="relative ml-3"
                 src={project.image}

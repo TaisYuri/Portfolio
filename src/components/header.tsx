@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 function Header() {
     return (
-        <nav id="header" className="fixed w-full z-30 top-0 max-sm:ml-[-2rem]">
+        <nav id="header" className="fixed w-full z-30 top-0 bg-gray-50 max-sm:ml-[-2rem]">
             <div className="w-full container flex flex-wrap items-center justify-between mt-0 py-2 mx-auto">
                 <div className="pl-5 flex items-center">
                     <a className="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl" href="#">
@@ -27,16 +27,16 @@ function Header() {
                 <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
                     <ul className="list-reset lg:flex justify-end flex-1 items-center">
                         <li className="mr-3">
-                        <a className="inline-block transform no-underline hover:text-gray-300 transition hover:scale-200 duration-300 ease-in-out py-2 px-4" href="#">Sobre mim</a>
+                        <a className="inline-block transform no-underline hover:text-gray-300 transition hover:scale-200 duration-300 ease-in-out py-2 px-4" href="#sobre">Sobre mim</a>
                         </li>
                         <li className="mr-3">
-                            <a className="inline-block transform no-underline hover:text-gray-300 transition hover:scale-200 duration-300 ease-in-out py-2 px-4" href="#">Habilidades</a>
+                            <a className="inline-block transform no-underline hover:text-gray-300 transition hover:scale-200 duration-300 ease-in-out py-2 px-4" href="#habilidades">Habilidades</a>
                         </li>
                         <li className="mr-3">
-                            <a className="inline-block transform no-underline hover:text-gray-300 transition hover:scale-200 duration-300 ease-in-out py-2 px-4" href="#">Projetos</a>
+                            <a className="inline-block transform no-underline hover:text-gray-300 transition hover:scale-200 duration-300 ease-in-out py-2 px-4" href="#projetos">Projetos</a>
                         </li>
                         <li className="mr-3">
-                            <a className="inline-block transform no-underline hover:text-gray-300 transition hover:scale-200 duration-300 ease-in-out py-2 px-4" href="#">Contatos</a>
+                            <a className="inline-block transform no-underline hover:text-gray-300 transition hover:scale-200 duration-300 ease-in-out py-2 px-4" href="#contatos">Contatos</a>
                         </li>
                     </ul>
                     {/* <button

@@ -5,14 +5,15 @@ import Image from 'next/image'
 function Footer() {
   return (
     <div
+      id='contatos'
       className='flex flex-col max-sm:w-[18rem]'
     >
-      
+
       <div className='text-center mt-8'>
         <h1 className='text-2xl leading-10 font-bold'>Contatos</h1>
-          <p className={`text-lg opacity-50 leading-8`}>
+        <p className={`text-lg opacity-50 leading-8`}>
           Entre com contato comigo através das minhas redes sociais abaixo
-          </p>
+        </p>
       </div>
 
       <div className='flex flex-row justify-center '>

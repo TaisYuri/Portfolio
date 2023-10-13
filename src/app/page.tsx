@@ -1,13 +1,12 @@
 import Header from '@/components/header'
-import Image from 'next/image'
-import Sobre from './sobre'
+import Sobre from '@/components/sobre'
 import Card from '@/components/card'
 import Abilities from '@/components/abilities'
 import { css, framework, git, internet, language, tech } from '@/data/tecnologys'
 import Footer from '@/components/footer'
 import ProjectSlider from '@/components/projectsSlider'
-import ProjectSliderEffect from '@/components/projectsSliderEffect'
 import { projects } from '@/data/projects';
+import Skills from '@/components/skills'
 
 export default function Home() {
   return (
@@ -22,7 +21,7 @@ export default function Home() {
       </div>
 
 
-      <div className="mb-4 grid text-center gap-5 md:grid-cols-2 lg:max-w-5xl lg:w-full lg:mb-5 lg:grid-cols-3 lg:text-left ">
+      <div className="mb-4 grid text-center gap-5 md:grid-cols-2 lg:max-w-5xl lg:w-full lg:mb-5 lg:grid-cols-3 lg:text-left animate-fade-up animate-duration-[3000ms]">
         <Card icon="/design-responsivo.png" description='+2 Anos atuando em projetos front.' />
         <Card icon="/design-responsivo.png" description='Linguagens principais: Javascript & Kotlin' />
         <div className=' text-center items-center max-lg:row-start-1 md:max-lg:col-start-1 md:max-lg:col-end-3 md:max-lg:grid md:max-lg:mx-auto'>
@@ -33,10 +32,17 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="mb-4 grid text-center gap-5 md:grid-cols-2 lg:max-w-5xl lg:w-full lg:mb-5 lg:grid-cols-3 lg:text-left ">
+      <div className="mb-4 grid text-center gap-5 md:grid-cols-2 lg:max-w-5xl lg:w-full lg:mb-5 lg:grid-cols-3 lg:text-left animate-fade-up animate-duration-[3000ms]">
         <Card icon="/design-responsivo.png" description='Formação em MBA de Desenvolvimento Mobile' />
         <Card icon="/design-responsivo.png" description='Design de aplicativos com responsividade' />
         <Card icon="/design-responsivo.png" description='Desenvolvimento para WEB, Nativo android e Mobile (React Native)' />
+      </div>
+
+      <div className='flex'>
+        <Skills icon="/design-responsivo.png" description='Formação em MBA de Desenvolvimento Mobile' />
+        <Skills icon="/design-responsivo.png" description='Formação em MBA de Desenvolvimento Mobile' />
+        <Skills icon="/design-responsivo.png" description='Formação em MBA de Desenvolvimento Mobile' />
+        <Skills icon="/design-responsivo.png" description='Formação em MBA de Desenvolvimento Mobile' />
       </div>
 
       <div className='flex flex-row max-lg:flex-col max-sm:min-w-[330px]'>
