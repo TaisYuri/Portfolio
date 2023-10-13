@@ -38,7 +38,7 @@ function ProjectSlider({ projects }:ProjectSchema) {
                 height={37}
                 priority
               />
-              <div className='max-w-md max-sm:pb-8 lg:max-w-xl lg:ml-3'>
+              <div className='max-w-md text-center max-sm:pb-8 lg:max-w-xl lg:ml-3'>
                 <h2 className="text-xl leading-10 font-bold text-center lg:text-2xl">{project.title}</h2>
                 <p className="mt-2 lg:text-lg">{project.description}</p>
                 <div className='mt-8 flex max-sm:mt-2'>

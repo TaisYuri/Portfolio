@@ -32,25 +32,21 @@ function Sobre() {
       </div>
       <section>
 
-        <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+        <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-4">
           
             <div className="text-lg leading-relaxed mb-4">
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quid
                 dubitas igitur mutare principia naturae?&nbsp;Ita multo sanguine
-                profuso in laetitia et in victoria est mortuus. Omnia contraria,
-                quos etiam insanos esse vultis.&nbsp;Hinc ceteri particulas
-                arripere conati suam quisque videro voluit afferre
-                sententiam.&nbsp;Quis non odit sordidos, vanos, leves, futtiles?
-                Quasi ego id curem, quid ille aiat aut neget.
+                profuso in laetitia et in victoria est mortuus.
               </p>
             </div>
             
         </div>
-        <div className="px-3 py-2 border-2 border-spacing-3 rounded-md bg-stone-500 max-w-max">
-            <h3 className="text-lg lg:text-base leading-tight">
+        <div className="px-3 py-2 border-2 border-spacing-3 rounded-md border-stone-500 mb-6 max-w-max ">
+            <h3 className="text-lg lg:text-base leading-tight text-center">
               <a className="hover:underline" href="/">
-                From Server-side Rendering to Static Generation
+                Meus Projetos
               </a>
             </h3>
           </div>
