@@ -38,12 +38,12 @@ export default function Home() {
         <Card icon="/design-responsivo.png" description='Desenvolvimento para WEB, Nativo android e Mobile (React Native)' />
       </div>
 
-      <div className='flex'>
+      {/* <div className='flex'>
         <Skills icon="/design-responsivo.png" description='Formação em MBA de Desenvolvimento Mobile' />
         <Skills icon="/design-responsivo.png" description='Formação em MBA de Desenvolvimento Mobile' />
         <Skills icon="/design-responsivo.png" description='Formação em MBA de Desenvolvimento Mobile' />
         <Skills icon="/design-responsivo.png" description='Formação em MBA de Desenvolvimento Mobile' />
-      </div>
+      </div> */}
 
       <div className='flex flex-row max-lg:flex-col max-sm:min-w-[330px]'>
         <div className='text-center mx-auto'>
