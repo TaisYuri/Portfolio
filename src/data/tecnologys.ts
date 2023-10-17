@@ -35,5 +35,5 @@ export const css = [
     { nameTecnology: "Sass", icon: '/icon-sass.svg' },
     { nameTecnology: "Less", icon: '/icon-less.svg' },
     { nameTecnology: "Tailwind", icon: '/icon-tailwind.svg' },
-    { nameTecnology: "Styled comp", icon: '/icon-styledcomp.svg' },
+    { nameTecnology: "Styledcomp", icon: '/icon-styled.svg' },
 ]

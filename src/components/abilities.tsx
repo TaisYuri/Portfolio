@@ -20,7 +20,7 @@ function Abilities({ data }: AbilitiesProps) {
             {data?.map(item =>
                 <div key={item.nameTecnology} className='mx-3 max-sm:mx-2'>
                     <Image
-                        className="relative dark m-auto max-sm:w-9 max-sm:h-9 max-lg:w-10 max-lg:h-10"
+                        className="relative dark m-auto max-h-12 max-sm:w-9 max-sm:h-9 max-lg:w-10 max-lg:h-10"
                         src={item.icon}
                         alt="img"
                         width={50}

@@ -19,7 +19,7 @@ export interface ProjectSchema{
 function ProjectSlider({ projects }:ProjectSchema) {
 
   return (
-    <div id="projetos" className='max-w-6xl mt-8 mx-auto  max-sm:max-w-[22rem] max-lg:max-w-[45rem]'>
+    <div id="projetos" className='flex flex-1 w-full mt-8 mx-auto lg:max-w-6xl'>
 
       <Swiper
         spaceBetween={120}

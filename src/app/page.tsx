@@ -1,12 +1,14 @@
 import Header from '@/components/header'
-import Sobre from '@/components/sobre'
+import Sobre from '@/components/about'
 import Card from '@/components/card'
 import Abilities from '@/components/abilities'
 import { css, framework, git, internet, language, tech } from '@/data/tecnologys'
 import Footer from '@/components/footer'
 import ProjectSlider from '@/components/projectsSlider'
 import { projects } from '@/data/projects';
+import About from '@/components/about'
 import Skills from '@/components/skills'
+import { skills } from '@/data/skills'
 
 export default function Home() {
   return (
@@ -17,15 +19,16 @@ export default function Home() {
         {/* Get started by editing&nbsp;
           <code className="font-mono font-bold">src/app/page.tsx</code> */}
         {/* </div> */}
-        <Sobre />
+        <About />
       </div>
 
 
       <div className="mb-4 grid text-center gap-5 md:grid-cols-2 lg:max-w-5xl lg:w-full lg:mb-5 lg:grid-cols-3 lg:text-left animate-fade-up animate-duration-[3000ms]">
-        <Card icon="/design-responsivo.png" description='+2 Anos atuando em projetos front.' />
-        <Card icon="/design-responsivo.png" description='Linguagens principais: Javascript & Kotlin' />
+        <Card icon="/business_time.png" description='+2 Anos atuando em projetos front end.' />
+        <Card icon="/design-responsivo.png" description='Formação em MBA de Desenvolvimento Mobile' />
+       
         <div className=' text-center items-center max-lg:row-start-1 md:max-lg:col-start-1 md:max-lg:col-end-3 md:max-lg:grid md:max-lg:mx-auto'>
-          <h1 className='text-2xl font-bold lg:mt-[50%] max-w-[30ch]'>Sobre mim</h1>
+          <h1 className='text-2xl font-bold lg:mt-[10%] max-w-[30ch]'>Sobre mim</h1>
           <p className={`max-w-[30ch] text-lg opacity-50 `}>
             Focada, dedicada e fazendo telas com amor
           </p>
@@ -33,10 +36,12 @@ export default function Home() {
       </div>
 
       <div className="mb-4 grid text-center gap-5 md:grid-cols-2 lg:max-w-5xl lg:w-full lg:mb-5 lg:grid-cols-3 lg:text-left animate-fade-up animate-duration-[3000ms]">
-        <Card icon="/design-responsivo.png" description='Formação em MBA de Desenvolvimento Mobile' />
+        <Card icon="/design-responsivo.png" description='Linguagens principais: Javascript, Typescript & Kotlin' />
         <Card icon="/design-responsivo.png" description='Design de aplicativos com responsividade' />
         <Card icon="/design-responsivo.png" description='Desenvolvimento para WEB, Nativo android e Mobile (React Native)' />
       </div>
+
+      <Skills icon={'/design-responsivo.png'} description={'hhhhhhhhhh'} skills={skills}/>
 
       {/* <div className='flex'>
         <Skills icon="/design-responsivo.png" description='Formação em MBA de Desenvolvimento Mobile' />
