@@ -8,8 +8,8 @@ export const language = [
 
 export const framework = [
     { nameTecnology: "React", icon: '/icon-react.svg' },
-    { nameTecnology: "React", icon: '/icon-rn.svg' },
-    { nameTecnology: "React Native", icon: '/icon-javascript.svg' },
+    { nameTecnology: "React Native", icon: '/icon-rn.svg' },
+    // { nameTecnology: "React Native", icon: '/icon-javascript.svg' },
 ]
 
 export const git = [

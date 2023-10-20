@@ -15,7 +15,7 @@ function Abilities({ data }: AbilitiesProps) {
         <div
         id='habilidades'
 
-            className="flex flex-row items-end rounded-xl px-5 py-4 mb-4 mr-4 bg-white drop-shadow-md transition min-w-[17rem] max-sm:min-w-[10rem] max-md:min-w-[20rem] max-lg:min-w-[13rem]"
+            className="flex flex-row items-end rounded-xl px-5 py-4 mb-4 mr-4 bg-white drop-shadow-md transition min-w-[15rem] max-sm:min-w-[10rem] max-md:min-w-[20rem] max-lg:min-w-[11rem]"
         >
             {data?.map(item =>
                 <div key={item.nameTecnology} className='mx-3 max-sm:mx-2'>

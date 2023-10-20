@@ -59,9 +59,9 @@ export default function Home() {
         </div>
         <div className='mt-8 mx-auto flex flex-wrap justify-center lg:max-w-4xl'>
           <Abilities data={language} />
+          <Abilities data={internet} />
           <Abilities data={framework} />
           <Abilities data={git} />
-          <Abilities data={internet} />
           <Abilities data={tech} />
           <Abilities data={css} />
         </div>

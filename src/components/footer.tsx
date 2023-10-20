@@ -19,7 +19,7 @@ function Footer() {
       <div className='flex flex-row justify-center '>
         <Image
           className="my-2 mx-4 max-sm:w-9 max-sm:h-9 max-lg:w-10 max-lg:h-10"
-          src='/javascript.svg'
+          src='/icon-github.svg'
           alt="img"
           width={40}
           height={37}
@@ -27,7 +27,7 @@ function Footer() {
         />
         <Image
           className="my-2 mx-4 max-sm:w-9 max-sm:h-9 max-lg:w-10 max-lg:h-10"
-          src='/javascript.svg'
+          src='/linkedin.png'
           alt="img"
           width={40}
           height={37}
@@ -36,7 +36,7 @@ function Footer() {
 
         <Image
           className="my-2 mx-4 max-sm:w-9 max-sm:h-9 max-lg:w-10 max-lg:h-10"
-          src='/javascript.svg'
+          src='/instagram.png'
           alt="img"
           width={40}
           height={37}
@@ -44,7 +44,7 @@ function Footer() {
         />
       </div>
 
-      <p className={`mt-6 opacity-70 text-center`}>
+      <p className={`mt-6 opacity-70 text-center max-sm:text-sm`}>
         2023 | Designed e código por ❤ Tais Yuri ❤
       </p>
     </div>

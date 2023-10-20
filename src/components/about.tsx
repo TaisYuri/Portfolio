@@ -32,9 +32,9 @@ function About() {
       </div>
       <section>
 
-        <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-4">
+        <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-4 max-sm:mb-3">
 
-          <div className="text-lg leading-relaxed mb-4">
+          <div className="text-lg leading-relaxed">
             <p>
               Desenvolvedora Front-end com orgulho
               Sempre buscando me aperfeiçoar e trazer a melhor e mais bonita aplicação!
@@ -42,7 +42,7 @@ function About() {
           </div>
 
         </div>
-        <div className="px-3 py-2 border-2 border-spacing-3 rounded-md border-[#FA7436] mb-6 max-w-max ">
+        <div className="px-3 py-2 border-2 border-spacing-3 rounded-md border-[#FA7436] mb-6 max-w-max max-sm:mx-auto">
           <h3 className="text-lg lg:text-base leading-tight text-center">
             <a className="text-[#FA7436] hover:underline" href="#projetos">
              Conheça Meus Projetos
