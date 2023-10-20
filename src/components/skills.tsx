@@ -23,9 +23,9 @@ function Skills({ description, icon,skills }: SkillsProps) {
       3: "/undraw_summer.svg",
       4: "/undraw_landscape_photographer.svg",
       5: "/undraw_with_love.svg",
-      6: "/undraw_engineering_team.svg",
-      7: "/undraw_programmer.svg",
-      8: "/undraw_landscape_photographer.svg",
+      6: "/undraw_work_in_progress.svg",
+      7: "/undraw_group_selfie.svg",
+      8: "/undraw_solution_mindset.svg",
     }
     return image[id]
   },[])
@@ -35,34 +35,34 @@ function Skills({ description, icon,skills }: SkillsProps) {
       1: "Gosto de fazer as coisas muito bem feitas, buscando meu melhor!",
       2: "A melhor forma de se expressar, ainda mais se for para auxiliar o próximo.",
       3: "Sempre fui facinada por estudos, por aprender algo novo e isto tem ajudado a aprender bastante.",
-      4: "Lorem ipsulum",
+      4: "Lorem ipsulum Lorem ipsulum Lorem ipsulum Lorem ipsulum",
       5: "É muito bom quando podemos crescer e evoluir dentro da empresa",
-      6:"/undraw_engineering_team.svg",
-      7:"/undraw_programmer.svg",
-      8:"/undraw_landscape_photographer.svg",
+      6: "Lorem ipsulum Lorem ipsulum Lorem ipsulum Lorem ipsulum",
+      7: "Lorem ipsulum Lorem ipsulum Lorem ipsulum Lorem ipsulum",
+      8: "Lorem ipsulum Lorem ipsulum Lorem ipsulum Lorem ipsulum",
     }
     return description[id]
   },[])
 
   return (
-    <div className="flex mt-8 mb-8 items-center max-sm:flex-col" >
+    <div className="flex items-center max-sm:flex-col" >
       <div className='h-80 w-[22rem] flex flex-col justify-between text-center max-sm:justify-start max-sm:h-60 max-sm:contents'>
         <Image
-        className="relative mx-auto max-sm:w-44"
+        className="relative mx-auto max-sm:w-44 h-56"
         src={renderImage(tagId)}
         alt="img"
         width={260}
         height={37}
         priority
       />
-        <p className={`mt-2 max-w-[42ch] text-lg opacity-70 max-sm:text-base`}>
+        <p className={`mt-2 max-w-[42ch] text-lg opacity-70 max-sm:text-base max-sm:h-20`}>
           {renderDescription(tagId)}
         </p>
       </div>
       <div className=''>
-        <div className='grid text-center gap-3 max-md:grid-cols-2 ml-7 max-sm:ml-0 max-sm:gap-2'>
+        <div className='grid text-center gap-3 max-sm:grid-cols-2 max-md:grid-cols-1 lg:grid-cols-2 ml-7 max-sm:ml-0 max-sm:gap-2'>
           {skills.map( item => 
-          <div key={item.id} onMouseOver={() => setTagId(item.id)} className='border border-transparent rounded-md mx-3 px-5 py-4 bg-[#FA7436] text-white max-sm:mx-0 max-sm:text-sm'>{item.skill}</div>
+          <div key={item.id} onMouseOver={() => setTagId(item.id)} className='border border-transparent rounded-md mx-3 px-5 py-4 bg-[#FA7436] text-white max-sm:mx-0 max-sm:text-xs'>{item.skill}</div>
             )}
          
         </div>

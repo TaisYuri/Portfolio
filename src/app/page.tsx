@@ -41,7 +41,7 @@ export default function Home() {
         <Card icon="/design-responsivo.png" description='Desenvolvimento para WEB, Nativo android e Mobile (React Native)' />
       </div>
 
-      <Skills icon={'/design-responsivo.png'} description={'hhhhhhhhhh hhhhhhhhhh hhhhhhhhhh hhhhhhhhhh hhhhhhhhhh hhhhhhhhhh hhhhhhhhhh hhhhhhhhhh hhhhhhhhhh hhhhhhhhhh hhhhhhhhhh hhhhhhhhhh hhhhhhhhhh hhhhhhhhhh hhhhhhhhhh '} skills={skills}/>
+      <Skills icon={'/design-responsivo.png'} description={''} skills={skills}/>
 
       {/* <div className='flex'>
         <Skills icon="/design-responsivo.png" description='Formação em MBA de Desenvolvimento Mobile' />
